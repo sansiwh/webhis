@@ -1,0 +1,8 @@
+html {min-width:500px;}
+body {font:12px/1.667 'Helvetica Neue',Tahoma;}
+img {vertical-align:top;display:inline-block;}
+#timelineID {margin-left: 60px;margin-right: 60px;margin-top:20px;margin-bottom: 20px;height:45px;}
+#timelineSlideID {margin-top:20px;height:260px;}
+
+.tls-item img {max-width:100%;max-height:100%;}
+.tls-item span {display:inline-block;}
