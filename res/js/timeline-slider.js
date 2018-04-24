@@ -1,10 +1,4 @@
-/**
- * TimelineSlider
- * https://github.com/dolymood/Timeline
- * MIT licensed
- *
- * Copyright (c) 2014 dolymood(aijc.net)
- */
+
 
 ;(function(win, $) {
 	'use strict'
@@ -387,7 +381,7 @@
 			this.focusEle = this._getEle(index);
 			this.curIndex = index;
 			this._doUpdatePos(this.focusEle.offset().left + this.focusEle.outerWidth() / 2, moving);
-			this._checkNav();
+			//this._checkNav();
 			this.checkingDate && this._checkCurDate();
 		},
 

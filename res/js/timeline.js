@@ -1,10 +1,3 @@
-/**
- * Timeline
- * https://github.com/dolymood/Timeline
- * MIT licensed
- *
- * Copyright (c) 2014 dolymood(aijc.net)
- */
 
 ;(function(win, $) {
 	'use strict'
@@ -645,11 +638,14 @@
 		 * 更新位置
 		 */
 		updatePos: function() {
-			var offsetLeft = this.focusEle.offset().left + this.focusEle.outerWidth() / 2;
-			var offX = this._parseOffset2X(offsetLeft);
+			if(typeof(this.focusEle.offset()) != 'undefined'){
+                var offsetLeft = this.focusEle.offset().left + this.focusEle.outerWidth() / 2;
+                var offX = this._parseOffset2X(offsetLeft);
 
-			this.x = -offX;
-			this._doUpdatePos();
+                this.x = -offX;
+                this._doUpdatePos();
+			}
+
 		},
 
 		/**
@@ -886,12 +882,12 @@
 				this.showLevel = SHOWLEVELS.YEAR;
 				this.zoomLevel = getZoomLevel(zoomTree.YEAR, this.options.maxZoom, ZOOMLEVELNUM, zoom);
 				this.zoomUnit = this.yZoomUnit;
-			} else if (zoom >= zoomTree.MONTH) {
+			} else /*(zoom >= zoomTree.MONTH)*/ {
 				// 以1月为单位
 				this.showLevel = SHOWLEVELS.MONTH;
 				this.zoomLevel = getZoomLevel(zoomTree.MONTH, zoomTree.YEAR, ZOOMLEVELNUM, zoom);
 				this.zoomUnit = this.mZoomUnit;
-			} else if (zoom >= zoomTree.DAY) {
+			}/* else if (zoom >= zoomTree.DAY) {
 				// 以1天为单位 
 				this.showLevel = SHOWLEVELS.DAY;
 				this.zoomLevel = getZoomLevel(zoomTree.DAY, zoomTree.MONTH, ZOOMLEVELNUM, zoom);
@@ -901,7 +897,7 @@
 				this.showLevel = SHOWLEVELS.HOUR;
 				this.zoomLevel = getZoomLevel(zoomTree.HOUR, zoomTree.DAY, ZOOMLEVELNUM, zoom);
 				this.zoomUnit = this.hZoomUnit;
-			}
+			}*/
 		},
 
 		/**
@@ -912,12 +908,17 @@
 		_buildItems: function(range) {
 			var map = {
 				'4': '_buildYears',
-				'3': '_buildMonths',
-				'2': '_buildDays',
-				'1': '_buildHours'
+				'3': '_buildMonths'/*,
+                '2': '_buildDays',
+                '1': '_buildHours'*/
 			};
+			/*if(this.showLevel == '2'){
+                this.showLevel = '3'
+			}*/
+			if(this.showLevel == '4' || this.showLevel == '3'){
+                return this[map[this.showLevel]](range);
+			}
 
-			return this[map[this.showLevel]](range);
 		},
 
 		/**
@@ -1275,6 +1276,7 @@
 				levelClass += ' tl-subitem-label-ok';
 			}
 			return '<div class="tl-subitem-label' + levelClass + '" data-id="' + id + '">' + val + '</div>';
+           /* return '<div class="tl-subitem-label" data-id="' + id + '">' + val + '</div>';*/
 		},
 
 		/**
