@@ -6,3 +6,14 @@ img {vertical-align:top;display:inline-block;}
 
 .tls-item img {max-width:100%;max-height:100%;}
 .tls-item span {display:inline-block;}
+
+.main_font{font-size:18px;margin-top:10px;}
+.user-icon img{width: 28px;height: 28px;}
+.main_text{margin: 0 0 8px;
+    font-size: 13px;
+    line-height: 24px;}
+.fly-list li{height: 75px}
+.main_info{position: relative;padding: 15px 15px 15px 25px; border-bottom: 1px dotted #e2e2e2;}
+.main_info_text{border-bottom: 1px dotted #e2e2e2;padding-top:25px;padding-bottom: 20px}
+.main_bottom{color:#999;font-size: 14px;}
+.main_bottom_left{margin-left: 15px;}
