@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="../res/layui/css/layui.css">
   <link rel="stylesheet" href="../res/css/global.css">
   <link rel="stylesheet" href="../res/css/index.css">
-  <link rel="stylesheet" type="text/css" href="../res/css/timeline.css">
-  <link rel="stylesheet" type="text/css" href="../res/css/timeline-slider.css">
+  <!--<link rel="stylesheet" type="text/css" href="../res/css/timeline.css">
+  <link rel="stylesheet" type="text/css" href="../res/css/timeline-slider.css">-->
 </head>
 <body>
 
@@ -80,7 +80,82 @@
               <div class="shang_font">商</div>
           </div>
           <div class="zhou">
-              <div class="shang_font">商</div>
+              <div class="zhou_font">周</div>
+              <div class="xzhou">
+                <div class="xzhou_font">西周</div>
+              </div>
+            <div class="dzhou">
+              <div class="dzhou_font">东周</div>
+            </div>
+            <div class="chunqiu">
+              <div class="chunqiu_font">春秋</div>
+            </div>
+            <div class="zhanguo">
+              <div class="zhanguo_font">战国</div>
+            </div>
+          </div>
+          <div class="qin">
+            <div class="qin_font">秦</div>
+          </div>
+          <div class="han">
+            <div class="han_font">汉</div>
+            <div class="xhan">
+              <div class="xhan_font">西汉</div>
+            </div>
+            <div class="xin">
+              <div class="xin_font">新</div>
+            </div>
+            <div class="dhan">
+              <div class="dhan_font">东汉</div>
+            </div>
+          </div>
+          <div class="sanguo">
+            <div class="sanguo_font">三国</div>
+            <div class="wei">
+              <div class="wei_font">魏</div>
+            </div>
+            <div class="shu">
+              <div class="shu_font">蜀</div>
+            </div>
+            <div class="wu">
+              <div class="wu_font">吴</div>
+            </div>
+          </div>
+          <div class="jin">
+            <div class="jin_font">晋</div>
+            <div class="xjin">
+              <div class="xjin_font">西晋</div>
+            </div>
+            <div class="djin">
+              <div class="djin_font">东晋</div>
+            </div>
+            <div class="slguo">
+              <div class="slguo_font">东晋</div>
+            </div>
+          </div>
+          <div class="nbchao">
+            <div class="nbchao_font">南北朝</div>
+          </div>
+          <div class="sui">
+            <div class="sui_font">隋</div>
+          </div>
+          <div class="tang">
+            <div class="tang_font">唐</div>
+          </div>
+          <div class="wdsg">
+            <div class="wdsg_font">五<br>代<br>十<br>国</div>
+          </div>
+          <div class="song">
+            <div class="song_font">宋</div>
+          </div>
+          <div class="yuan">
+            <div class="yuan_font">元</div>
+          </div>
+          <div class="min">
+            <div class="min_font">明</div>
+          </div>
+          <div class="qing">
+            <div class="qing_font">清</div>
           </div>
       </div>
     </div>
@@ -365,8 +440,8 @@
  
 <script src="../res/layui/layui.js"></script>
 <script src="../res/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="../res/js/timeline.js"></script>
-<script type="text/javascript" src="../res/js/timeline-slider.js"></script>
+<!--<script type="text/javascript" src="../res/js/timeline.js"></script>
+<script type="text/javascript" src="../res/js/timeline-slider.js"></script>-->
 <script>
 layui.cache.page = '';
 layui.cache.user = {
@@ -383,112 +458,7 @@ layui.config({
   fly: 'index'
 }).use('fly');
 
-var timelineData = {
-    focus_date: '2012-01',
-    events: [
-        {
-            id: "2029-05-05 12:00",
-            startDate: "1900-01-05 12:00",
-            endDate: "2000-012-05 13:00"
-        },
-        {
-            id: "2029-05-05 12:00",
-            startDate: "2010-01-05 12:00",
-            endDate: "2010-012-05 13:00"
-        },
-        {
-            id: "2011-06-05 12:00",
-            startDate: "2011-01-05 12:00",
-            endDate: "2011-12-05 12:00"
-        },
-        {
-            id: "2011-07-05 12:00",
-            startDate: "2012-01-05 12:00",
-            endDate: "2012-12-05 12:00"
-        },
-        {
-            id: "2011-09-05 12:00",
-            startDate: "2013-01-05 12:00",
-            endDate: "2013-12-05 12:00"
-        },
-        {
-            id: "2011-11-05 12:00",
-            startDate: "2014-01-05 12:00",
-            endDate: "2014-12-05 12:00"
-        },
-        {
-            id: "2012-01-05 12:00",
-            startDate: "2015-01-05 12:00",
-            endDate: "2015-12-05 12:00"
-        },
-        {
-            id: "2012-03-05 12:00",
-            startDate: "2016-01-05 12:00",
-            endDate: "2016-12-05 12:00"
-        },
-        {
-            id: "2012-05-05 12:00",
-            startDate: "2017-01-05 12:00",
-            endDate: "2017-12-05 12:00"
-        },
-        {
-            id: "2012-07-05 12:00",
-            startDate: "2018-01-05 12:00",
-            endDate: "2018-12-05 12:00"
-        },
-        {
-            id: "2012-09-05 12:00",
-            startDate: "2019-01-05 12:00",
-            endDate: "2019-12-05 12:00"
-        }
-    ]
-}
 
-var z = $('#zoomI');
-var tl = new Timeline('#timelineID', timelineData, {
-    // reverseDate: true,
-    checkResize: true,
-    showAllLevelDate: true,
-    zoom: z.val()
-});
-
-var tls = new TimelineSlider('#timelineSlideID', tl, {
-    checkResize: true,
-    navPanel: true,
-    buildItemContent: function(evt, index) {
-        return '<img src="../res/images/time_img/timg.jpg" width="100%" height="100%">';
-    }
-
-});
-
-$('#zoom').click(function() {
-    // 增加zoom
-    setV(tl.zoom + tl.zoomUnit);
-});
-
-$('#zoom2').click(function() {
-    // 减小zoom
-    setV(tl.zoom - tl.zoomUnit);
-});
-
-function setV(v) {
-    v = v > tl.options.maxZoom ? tl.options.maxZoom :
-        v < tl.options.minZoom ? tl.options.minZoom : v;
-    z.val(v);
-    tl.zoomTo(v);
-}
-
-z.on('change', function() {
-    tl.zoomTo(z.val());
-});
-
-tl.on('zoomChange', function(e, zoom) {
-    z.val(zoom);
-});
-var focusDate = $('#focusDate');
-tl.on('focusDateChange', function(e, date) {
-    focusDate.val(date.toLocaleString());
-});
 </script>
 
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30088308'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30088308' type='text/javascript'%3E%3C/script%3E"));</script>
