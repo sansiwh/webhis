@@ -17,3 +17,10 @@ img {vertical-align:top;display:inline-block;}
 .main_info_text{border-bottom: 1px dotted #e2e2e2;padding-top:25px;padding-bottom: 20px}
 .main_bottom{color:#999;font-size: 14px;}
 .main_bottom_left{margin-left: 15px;}
+
+.time_padding{margin-top: 10px;margin-bottom: 10px;}
+.xia{height:90px;font-size: 15px;background-color: #DAF9CA;color:#616161;font-weight: bold;text-align: center;float: left;width: 5%;}
+.xia_font{padding-top: 30px;}
+
+.shang{height:90px;font-size: 15px;background-color: #F3D7B5;color:#616161;font-weight: bold;text-align: center;float: left;width: 5%;}
+.shang_font{padding-top: 30px;}
