@@ -609,7 +609,7 @@ layui.define(['layer', 'laytpl', 'form', 'element', 'upload', 'util'], function(
   //固定Bar
   util.fixbar({
     bar1: '&#xe642;'
-    ,bgcolor: '#009688'
+    ,bgcolor: '#ff7054'
     ,click: function(type){
       if(type === 'bar1'){
         layer.msg('打开 index.js，开启发表新帖的路径');

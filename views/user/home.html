@@ -35,14 +35,14 @@ var info = d.info || {}, jie = d.jie, da = d.da;
     {{# if(info.auth == 1){ }}
       <span style="color:#c00;">（管理员）</span>
     {{# } else if(info.auth == 2) { }}
-      <span style="color:#5FB878;">（社区之光）</span>
+      <span style="color:#ff7054;">（社区之光）</span>
     {{# } else if(info.auth == -1) { }}
       <span>（该号已被封）</span>
     {{# } }}
   </h1>
 
   {{# if(info.approve){ }}
-    <p style="padding: 10px 0; color: #5FB878;">认证信息：{{ info.approve }}</p>
+    <p style="padding: 10px 0; color: #ff7054;">认证信息：{{ info.approve }}</p>
   {{# } }}
 
   <p class="fly-home-info">

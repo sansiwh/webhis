@@ -78,7 +78,7 @@ layui.define(['laypage', 'fly'], function(exports){
             ,done: function(res){
               if(res.status == 0){
                 image.val(res.url);
-                preview.html('<a href="'+ res.url +'" target="_blank" style="color: #5FB878;">封面已上传，点击可预览</a>');
+                preview.html('<a href="'+ res.url +'" target="_blank" style="color: #ff7054;">封面已上传，点击可预览</a>');
               } else {
                 layer.msg(res.msg, {icon: 5});
               }
