@@ -326,10 +326,10 @@ body .layui-edit-face  .layui-layer-content{padding:0; background-color:#fff; co
 .fly-detail-info .fly-list-nums{top: -3px; font-size: 16px;}
 .fly-detail-info .fly-list-nums i{padding: 0 3px 0 15px; font-size: 22px; color: #999;}
 
-.detail-about{position: relative; line-height: 20px; padding: 15px 15px 15px 75px; font-size: 13px; background-color: #f8f8f8; color: #999;}
+.detail-about{position: relative; line-height: 20px; padding: 15px 15px 15px 75px; font-size: 13px;  color: #999;}
 .detail-about .jie-status, .detail-about .jie-status-ok{color:#fff;}
 .detail-about .fly-jing{padding:0 6px; background-color:#c00; color:#fff;}
-.detail-about .detail-hits{position: relative; top: 5px; line-height: 20px;}
+.detail-about .detail-hits{position: relative; top: 0px; line-height: 20px;}
 .fly-detail-user{white-space: nowrap; overflow: hidden;}
 .fly-detail-user a{padding-right: 10px; font-size: 14px;}
 .fly-detail-user .icon-renzheng{top: 1px;}
@@ -379,7 +379,7 @@ body .layui-edit-face  .layui-layer-content{padding:0; background-color:#fff; co
 .jieda-reply span em{font-style: normal;}
 .jieda-reply span .icon-zan{font-size: 22px;}
 .jieda-reply .zanok,
-.jieda-reply .jieda-zan:hover{color:#c00}
+.jieda-reply .jieda-zan:hover{color:#ff7054}
 .jieda-reply span .icon-svgmoban53{position: relative; top: 1px;}
 
 
