@@ -8,7 +8,7 @@
 
 
 /* 全局 */
-html,body{overflow-x: hidden;}
+/*html,body{overflow-x: hidden;}*/
 html body{margin-top: 61px;}
 html{background-color: #F2F2F2;}
 i{font-style: normal;}
@@ -108,7 +108,7 @@ pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid 
 .fly-msg a{color:#4F99CF}
 .fly-editbox{position: relative;}
 
-.fly-marginTop{margin-top: 15px;}
+.fly-marginTop{margin-top: 80px;}
 .fly-mid{display: inline-block; height: 10px; width: 1px; margin: 0 10px; vertical-align: middle; background-color: #e2e2e2;}
 .fly-right{position: absolute; right: 15px; top: 0;}
 
@@ -310,7 +310,7 @@ body .layui-edit-face  .layui-layer-content{padding:0; background-color:#fff; co
 .jie-row li a{ padding-right:15px; font-size:14px;}
 .jie-row li cite{padding-right:15px;}
 .jie-row li i, .jie-row li em, .jie-row li cite{font-size:12px; color:#999; font-style: normal;}
-.jie-row li .mine-edit{margin-left:15px; padding:0 6px; background-color: #8FCDA0; color:#fff; font-size:12px;}
+.jie-row li .mine-edit{margin-left:15px; padding:0 6px; background-color: #ff7054; color:#fff; font-size:12px;}
 .jie-row li em{position:absolute; right:0; top:0;}
 .jie-row li .jie-user{}
 .jie-row li .jie-title{max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
