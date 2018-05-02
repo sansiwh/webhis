@@ -226,9 +226,9 @@ pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid 
 
 /* 简易编辑器 */
 .fly-edit{position:relative; display: block; top: 1px; left:0; padding:0 10px; border: 1px solid #e6e6e6; border-radius: 2px 2px 0 0; background-color: #FBFBFB;}
-.fly-edit span{cursor:pointer; padding:0 10px; line-height: 38px; color:#009E94;}
+.fly-edit span{cursor:pointer; padding:0 10px; line-height: 38px; color:#ff7054;}
 .fly-edit span i{position: relative; padding-right: 6px; font-size: 18px;}
-.fly-edit span:hover{color: #5DB276;}
+.fly-edit span:hover{color: #ff7054;}
 
 /* 列表 */
 .fly-list li{position: relative; height: 45px; line-height: 22px; padding: 15px 15px 15px 25px; border-bottom: 1px dotted #e2e2e2;}

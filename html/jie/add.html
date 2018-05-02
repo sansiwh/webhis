@@ -9,63 +9,50 @@
   <meta name="description" content="Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力">
   <link rel="stylesheet" href="../../res/layui/css/layui.css">
   <link rel="stylesheet" href="../../res/css/global.css">
+  <link rel="stylesheet" href="../../res/css/index.css">
+  <link rel="icon" href="../../once.ico" type="image/x-icon" />
 </head>
 <body>
 
 <div class="fly-header layui-bg-black">
   <div class="layui-container">
-    <a class="fly-logo" href="/">
+    <a class="fly-logo" href="../index.html">
       <img src="../../res/images/logo.png" alt="layui">
     </a>
     <ul class="layui-nav fly-nav layui-hide-xs">
       <li class="layui-nav-item layui-this">
-        <a href="/"><i class="iconfont icon-jiaoliu"></i>交流</a>
+        <a style="color:#8e8e8e;" href="../index.html">首页</a>
       </li>
       <li class="layui-nav-item">
-        <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
-      </li>
-      <li class="layui-nav-item">
-        <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
+        <a style="color:#8e8e8e;" href="#">问答</a>
       </li>
     </ul>
-    
+
     <ul class="layui-nav fly-nav-user">
-      
+
       <!-- 未登入的状态 -->
-      <!--
       <li class="layui-nav-item">
-        <a class="iconfont icon-touxiang layui-hide-xs" href="user/login.html"></a>
-      </li>
-      <li class="layui-nav-item">
-        <a href="user/login.html">登入</a>
+        <a style="color:#8e8e8e;" href="login.html">登录</a>
       </li>
       <li class="layui-nav-item">
-        <a href="user/reg.html">注册</a>
+        <a style="color:#ff7055;" href="reg.html">注册</a>
       </li>
-      <li class="layui-nav-item layui-hide-xs">
-        <a href="/app/qq/" onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})" title="QQ登入" class="iconfont icon-qq"></a>
-      </li>
-      <li class="layui-nav-item layui-hide-xs">
-        <a href="/app/weibo/" onclick="layer.msg('正在通过微博登入', {icon:16, shade: 0.1, time:0})" title="微博登入" class="iconfont icon-weibo"></a>
-      </li>
-       -->
-      
+
+
       <!-- 登入后的状态 -->
-      <li class="layui-nav-item">
-        <a class="fly-nav-avatar" href="javascript:;">
-          <cite class="layui-hide-xs">贤心</cite>
-          <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
-          <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
-          <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
-        </a>
-        <dl class="layui-nav-child">
-          <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
-          <dd><a href="../user/message.html"><i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a></dd>
-          <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a></dd>
-          <hr style="margin: 5px 0;">
-          <dd><a href="" style="text-align: center;">退出</a></dd>
-        </dl>
+      <!--<li class="login_user_text">
+        <div class="user_text_color"><a href="jie/add.html" style="color:#ff7054"  class="login_user_info">写文章</a></div>
       </li>
+      <li class="layui-nav-item">
+        <img src="../res/images/user.jpg" class="layui-nav-img login_img">
+        <dl class="layui-nav-child">
+          <dd><a class="login_user_info_drug" href="javascript:;">基本设置</a></dd>
+          <dd><a class="login_user_info_drug" href="javascript:;">中户中心</a></dd>
+          <dd><a class="login_user_info_drug" href="javascript:;">我的消息</a></dd>
+          <dd><a class="login_user_info_drug" href="javascript:;">退出</a></dd>
+        </dl>
+      </li>-->
+
     </ul>
   </div>
 </div>
@@ -83,16 +70,49 @@
             <form action="" method="post">
               <div class="layui-row layui-col-space15 layui-form-item">
                 <div class="layui-col-md3">
-                  <label class="layui-form-label">所在专栏</label>
+                  <label class="layui-form-label">选择年代</label>
                   <div class="layui-input-block">
                     <select lay-verify="required" name="class" lay-filter="column"> 
                       <option></option> 
-                      <option value="0">提问</option> 
-                      <option value="99">分享</option> 
-                      <option value="100">讨论</option> 
-                      <option value="101">建议</option> 
-                      <option value="168">公告</option> 
-                      <option value="169">动态</option> 
+                      <option value="0">夏</option>
+                      <option value="99">商</option>
+                      <option value="100">周</option>
+                      <option value="101">西周</option>
+                      <option value="168">东周</option>
+                      <option value="169">春秋</option>
+                      <option value="0">战国</option>
+                      <option value="99">秦</option>
+                      <option value="100">汉</option>
+                      <option value="101">西汉</option>
+                      <option value="168">新</option>
+                      <option value="169">东汉</option>
+                      <option value="0">三国</option>
+                      <option value="99">魏</option>
+                      <option value="100">蜀</option>
+                      <option value="101">吴</option>
+                      <option value="168">晋</option>
+                      <option value="169">西晋</option>
+                      <option value="0">东晋</option>
+                      <option value="99">五胡十六国</option>
+                      <option value="100">南北朝</option>
+                      <option value="101">北魏</option>
+                      <option value="168">东魏</option>
+                      <option value="169">西魏</option>
+                      <option value="0">北齐</option>
+                      <option value="99">北周</option>
+                      <option value="100">宋(南北朝)</option>
+                      <option value="101">齐(南北朝)</option>
+                      <option value="168">梁(南北朝)</option>
+                      <option value="169">陈(南北朝)</option>
+                      <option value="0">隋</option>
+                      <option value="99">唐</option>
+                      <option value="100">五代十国</option>
+                      <option value="101">宋</option>
+                      <option value="168">北宋</option>
+                      <option value="169">南宋</option>
+                      <option value="169">元</option>
+                      <option value="169">明</option>
+                      <option value="169">清</option>
                     </select>
                   </div>
                 </div>
@@ -137,21 +157,6 @@
                 </div>
               </div>
               <div class="layui-form-item">
-                <div class="layui-inline">
-                  <label class="layui-form-label">悬赏飞吻</label>
-                  <div class="layui-input-inline" style="width: 190px;">
-                    <select name="experience">
-                      <option value="20">20</option>
-                      <option value="30">30</option>
-                      <option value="50">50</option>
-                      <option value="60">60</option>
-                      <option value="80">80</option>
-                    </select>
-                  </div>
-                  <div class="layui-form-mid layui-word-aux">发表后无法更改飞吻</div>
-                </div>
-              </div>
-              <div class="layui-form-item">
                 <label for="L_vercode" class="layui-form-label">人类验证</label>
                 <div class="layui-input-inline">
                   <input type="text" id="L_vercode" name="vercode" required lay-verify="required" placeholder="请回答后面的问题" autocomplete="off" class="layui-input">
@@ -171,18 +176,11 @@
   </div>
 </div>
 
-<div class="fly-footer">
-  <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>
-  <p>
-    <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
-    <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
-    <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
-  </p>
-</div>
+
 
 <script src="../../res/layui/layui.js"></script>
 <script>
-/*layui.cache.page = 'jie';
+layui.cache.page = 'jie';
 layui.cache.user = {
   username: '游客'
   ,uid: -1
@@ -195,7 +193,7 @@ layui.config({
   ,base: '../../res/mods/'
 }).extend({
   fly: 'index'
-}).use('fly');*/
+}).use('fly');
 </script>
 
 </body>
